@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .grid-rows-custom {
+      grid-template-rows: .3fr 2.5fr 1fr;
+    }
+  }
+  
