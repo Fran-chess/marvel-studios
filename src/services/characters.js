@@ -7,7 +7,11 @@ export const fetchCharactersData = async (searchTerm = "") => {
   try {
     const queryUrl = searchTerm ? `${url}&nameStartsWith=${searchTerm}` : url;
     const {data} = await axios.get(queryUrl);
-    const results = data.data.results;
+    let results = data.data.results;
+
+    results = results.filter(character => {
+      return !character.thumbnail.path.endsWith('/image_not_available');
+    });
 
     if (!searchTerm) {
       let characters = [];

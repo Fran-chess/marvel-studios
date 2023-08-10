@@ -2,9 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-    .grid-rows-custom {
-      grid-template-rows: .3fr 2.5fr 1fr;
-    }
-  }
+body{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
   

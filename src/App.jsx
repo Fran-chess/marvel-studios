@@ -1,17 +1,18 @@
-import { useState, useCallback  } from "react";
-import Footer from "./components/Footer"
-import Header from "./components/Header"
-import Main from "./components/Main"
-
+import { BrowserRouter as Router } from "react-router-dom";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Main from "./components/Main";
 
 function App() {
   return (
-    <div className='h-screen bg-zinc-50 dark:bg-zinc-950 font-mont grid grid-rows-custom'>
-    <Header  />
-    <Main  />
-    <Footer />
-  </div>
-  )
+    <Router>
+      <div className="flex flex-col justify-center items-center w-full">
+        <Header />
+        <Main />
+        <Footer />
+      </div>
+    </Router>
+  );
 }
 
-export default App
+export default App;
