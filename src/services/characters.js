@@ -15,7 +15,7 @@ export const fetchCharactersData = async (searchTerm = "") => {
 
     if (!searchTerm) {
       let characters = [];
-      for(let i = 0; i < 5; i++) {
+      for(let i = 0; i < 10; i++) {
         const randomIndex = Math.floor(Math.random() * results.length);
         characters.push(results[randomIndex]);
         results.splice(randomIndex, 1);

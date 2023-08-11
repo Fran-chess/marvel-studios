@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { RiToggleFill } from "react-icons/ri";
 import { RiToggleLine } from "react-icons/ri";
 
